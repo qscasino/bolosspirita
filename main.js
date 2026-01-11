@@ -44,7 +44,7 @@ function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
 /* =========================
    ✅ BLOQUEO + PREMIO PERSISTENTE
 ========================= */
-const REWARD_KEY = "qs_bowling_reward_v1";
+const REWARD_KEY = "qs_bowling_reward_v2";
 
 function safeLocalStorage() {
   try { return window.localStorage; } catch { return null; }
