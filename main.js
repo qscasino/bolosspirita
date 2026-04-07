@@ -105,7 +105,7 @@ const AudioSys=(()=>{
 );
 
 /* ══ REWARD STORAGE ══ */
-const REWARD_KEY="ark_bowling_v1";
+const REWARD_KEY="ark_bowling_v2";
 function lsGet(){try{const r=localStorage.getItem(REWARD_KEY);return r?JSON.parse(r):null;}catch{return null;}}
 function lsSave(bonus,attempt){try{localStorage.setItem(REWARD_KEY,JSON.stringify({bonus,attempt,ts:Date.now()}));}catch{}}
 let savedReward=lsGet(), gameLocked=!!savedReward;
